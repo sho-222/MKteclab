@@ -1,0 +1,322 @@
+<!--どこにjquery, javascript?
+1月29日現在、細かいコメント訂正していく、bootstrapをsassでまとめたバージョンを作ってみる（新しいファイルで）、ハンバーガーメニューでjquery、リアクトを使ってサイトではなくて、事務アプリ的なやつ。（https://prog-8.com/languages/react、https://ferret-plus.com/6032）-->
+
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<title>MK技術研究所</title>
+	<meta name="description" content="MK技術研究所の説明"> 
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css"> 
+</head>
+
+<body>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-12 mt-3 h1 text-center text-success">
+				MK技術研究所
+			</div>
+		</div>
+	</div>
+
+
+	<!--トグラーを右にしたい-->
+	<nav class="container navbar navbar-expand-sm navbar-dark bg-success mt-3">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav4" aria-controls="navbarNav4" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">ホーム</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">MK菌とは</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">企業情報</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">公式ブログ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">ご愛用者様</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">English</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+    	<img src="./img/top-wrapper-background.jpg" alt="森の写真" title="自然" class="img-detail">
+    </div>
+    
+
+	<!--リンク文字を白で統一、ボタンのホバーの感じ検討-->
+	<div class="container sec-lead p-5 text-center">
+		<p class="lead-description font-weight-bold">
+			私たちはMK技術研究所は土壌改良のプロフェッショナルです。
+			<br>
+			自社開発「MK菌」を用いて、土を元気にします。
+		</p>
+		<div class="btn-set container pt-4">
+			<div class="row">
+				<div class="col-md-6">
+					<button type="button" class="btn btn-block ">
+					<a href="#" title="電話をかける">電話をかける</a>
+					</button>
+				</div>
+				<div class="col-md-6">
+					<button type="button" class="btn btn-block">
+						<a href="https://www.google.co.jp/maps/dir/35.9237065,140.1375374/%E4%BD%90%E8%B2%AB%E9%A7%85+%E6%97%A5%E6%9C%AC/@35.9277095,140.1323236,16z/data=!3m1!4b1!4m15!1m6!3m5!1s0x602270f416212d55:0xcb46f0ac59ed162d!2z5L2Q6LKr6aeF!8m2!3d35.9300659!4d140.1382285!4m7!1m0!1m5!1m1!1s0x602270f416212d55:0xcb46f0ac59ed162d!2m2!1d140.1382285!2d35.9300659?hl=ja" target="_blank" title="経路を探す">経路検索</a>
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--リンク文字を赤で統一-->
+	<div class="container sec-news">
+		<div class="inner">
+			<h4 class="title-brackets text-center mb-4 font-weight-bold">
+				＜＜ 最新のお知らせ ＞＞
+			</h4>
+			<ul class="recent-list pr-5">
+				<li>
+					<a href="#" title="営業時間について">
+						<div class="txt-set">
+							<p class="mt-3">営業時間について</p>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#" title="MK菌の培養情報">
+						<div class="txt-set">
+							<p class="mt-3">MK菌の培養情報（2020年2月）</p>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<!--リンク文字を赤で統一-->
+		<div class="btn-link pt-4">
+			<button type="button" class="btn btn-block">
+				<a href="#" title="お知らせ一覧">お知らせ一覧</a>
+			</button>
+		</div>
+	</div>
+
+
+
+	<div class="container sec-about">
+		<img src="./img/vegetable.jpg" alt="キャベツの写真" title="オーガニック野菜" class="img-detail mt-5 mb-4">
+		<div class="title-set mb-3 font-weight-bold">
+			<span class=" mb-2">自然栽培、土壌改良、</span>
+			<br>
+			<span class="mb-2">オーガニック野菜の栽培は、</span>
+			<br>
+			<span class="mb-2">当社にお任せください。</span>
+		</div>
+		<div class="txt-set text-muted font-weight-bold">
+			<p>土壌の改良には、有機土壌改良剤が不可欠と言われていますが、従来は畜糞などの完全発酵を待たず使用するため、土壌で発酵し効果が出るまでに時間がかかり、臭気を発生させ、害虫の餌にもなっていました。それらの点を解消した上で、土壌の力(地力)を取り戻すためバイオテクノロジーを駆使して、研究・開発に際し生ゴミや畜糞などを、自然から得た大きな資源であり、自然に還すのが理想的な生態系リサイクルと考えました。</p>
+			<p>『自然の恵みを自然に還す』『生ゴミの衛生的な処理』『地球のために役立ちたい』の3つを開発コンセプトとして掲げ、高品質な循環型システムの研究・開発に取り組むことで、現行のバイオ発酵技術が生まれたのです。</p>
+		</div>
+		<div class="btn-set container py-5">
+			<div class="row">
+				<div class="col-md-6">
+					<button type="button" class="btn btn-block ">
+						<a href="#" title="創設者のご紹介">創設者のご紹介</a>
+					</button>
+				</div>
+				<div class="col-md-6">
+					<button type="button" class="btn btn-block">
+						<a href="#" title="MK菌について">MK菌について</a>
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!--商品説明の一番上のmt-4が反映されない、リンクを白色に-->
+	<div class="container sec-explain py-5">
+		<img src="./img/bacteria.jpg" alt="MK菌の写真" title="微生物" class="img-detail mt-5 mb-4">		
+		<div class="title-explain mb-3 font-weight-bold">
+			<span class="mb-2">MK菌は、</span>
+			<br>
+			<span class="mb-2">主に細菌・酵母菌など、</span>
+			<br>
+			<span class="mb-2">あらゆる微生物を含有した菌です。</span>
+		</div>
+		<div class="container">
+			<div class="row d-flex">
+				<div class="col-md-6 movie-wrap">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/V3sB46Yj4pw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+				<div class="col-md-6 item-explain mb-4 font-weight-bold text-muted">
+					<span>N-100(土帰・土輝)とは100%天然有機性の土壌活性液です。</span>
+					<button type="button" class="btn btn-block mt-2 mb-4">
+						<a href="#" title="土壌活性液">土壌活性液 N-100</a>
+					</button>
+					<span>土壌改良活性剤MK109とはバイオ発酵技術により完熟発酵させた土壌活性剤です。</span>
+					<button type="button" class="btn btn-block mt-2 mb-4">
+						<a href="#" title="土壌活性液">土壌活性液 N-100</a>
+					</button>
+					<span>土壌改良基礎材多孔質バイオセラミックとは、植物の成長に必要な微量成分を20種類以上を含有する製品です。</span>
+					<button type="button" class="btn btn-block mt-2 mb-4">
+						<a href="#" title="土壌活性液">土壌活性液 N-100</a>
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--リンクの色を変える、3枚目と4枚目の写真を変える。-->
+	<div class="container about-mk">
+		<div class="title-item mt-4 mb-4 font-weight-bold text-center">
+			<span>MK技術研究所ができること</span>
+		</div>
+		<div class="row">
+			<div class="sec-mk col-md-6 mb-4 font-weight-bold text-muted text-center">
+				<img src="./img/soil.jpg" alt="オーガニック野菜" title="オーガニック野菜" class="img-detail-mk mb-4">
+				<a href="#" title="土壌改良">土壌を改良する</a>
+				<p class="mt-2">安心して食べられる野菜を、安全な土壌で育てます。</p>
+			</div>
+			<div class="sec-mk col-md-6 mb-4 font-weight-bold text-muted text-center">
+				<img src="./img/organic-vegetable.jpg" alt="オーガニック野菜" title="オーガニック野菜" class="img-detail-mk mb-4">
+				<a href="#" title="オーガニック野菜">安心・安全な野菜を作る</a>
+				<p class="mt-2">安心して食べられる野菜を、安全な土壌で育てます。</p>
+			</div>
+			<div class="sec-mk col-md-6 mb-4 font-weight-bold text-muted text-center">
+				<img src="./img/increase-production.jpg" alt="オーガニック野菜" title="オーガニック野菜" class="img-detail-mk mb-4">
+				<a href="#" title="成長促進">成長を促成させる</a>
+				<p class="mt-2">安心して食べられる野菜を、安全な土壌で育てます。</p>
+			</div>
+			<div class="sec-mk col-md-6 mb-4 font-weight-bold text-muted text-center">
+				<img src="./img/increase-speed.jpg" alt="オーガニック野菜" title="オーガニック野菜" class="img-detail-mk mb-4">
+				<a href="#" title="生産量増加">生産量を増加させる</a>
+				<p class="mt-2">安心して食べられる野菜を、安全な土壌で育てます。</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="container about-company bg-white pb-5">
+		<div class="title-item mt-4 mb-4 font-weight-bold text-center">
+			<span>営業案内とアクセス</span>
+		</div>
+		<div class="row">
+			<div class="col-md-5 movie-wrap my-3">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18005.82930713755!2d140.13599890248068!3d35.93650291035402!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6022708b9d703777%3A0x305be9ac735addcc!2z44CSMzAxLTAwMDUg6Iyo5Z-O55yM6b6N44Kx5bSO5biC5bed5Y6f5Luj55S677yR77yQ77yT77yZ4oiS77yR!5e0!3m2!1sja!2sjp!4v1580719645058!5m2!1sja!2sjp" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+			</div>
+			<div class="col-md-7 my-3">
+				<div class="txt-access text-center mb-4">
+					<h4>常磐線佐貫駅より5分</h4>
+					<h3>茨城県の土壌改良・分析</h3>
+					<h3>MK技術研究所</h3>
+				</div>
+				<div class="dl-common">
+					<dl>
+						<dt>電話番号</dt>
+						<dd>050-3160-3101</dd>
+						<dt>FAX番号</dt>
+						<dd>050-xxxx-xxxx</dd>
+						<dt>アクセス</dt>
+						<dd>JR常磐線佐貫駅下車後、徒歩５分</dd>
+						<dt>設立年月日</dt>
+						<dd>2014年3月3日</dd>
+						<dt>代表者</dt>
+						<dd>大里一雄</dd>
+						<dt>資本金</dt>
+						<dd>200万円</dd>
+					</dl>	
+				</div>
+				<!--
+				<div class="schedule" align="center">
+					<table class="table table-bordered text-center">
+						<tr>
+							<td>営業時間</td>
+							<td>月</td>
+							<td>火</td>
+							<td>水</td>
+							<td>木</td>
+							<td>金</td>
+							<td>土</td>
+							<td>日・祝</td>
+						</tr>
+						<tr>
+							<td>午前</td>
+							<td>●</td>
+							<td>●</td>
+							<td>●</td>
+							<td>●</td>
+							<td>●</td>
+							<td>●</td>
+							<td>×</td>
+						</tr>
+						<tr>
+							<td>午後</td>
+							<td>●</td>
+							<td>●</td>
+							<td>△</td>
+							<td>●</td>
+							<td>●</td>
+							<td>×</td>
+							<td>×</td>
+						</tr>
+					</table>
+				</div>
+				-->
+				<div>
+					<p class="my-2">※水曜日の午後は東京の●●市場に出店のため事務所は閉館。電話での問い合わせのみ可能</p>
+					<p class="mb-2">※土曜日の午後、日曜祝は休業いたします。ご用の方はメールよりお問い合わせください。翌営業日ご返信致します。</p>
+					<button type="button" class="btn btn-block mt-3 mb-4">
+						<a href="#" title="問い合わせ">お問い合わせはこちら</a>
+					</button>
+				</div>	
+			</div>
+		</div>	
+	</div>
+
+
+	<div class="container bg-success py-4">
+		<div class="row my-0 mx-auto">
+			<div class="col-md-12 text-center">
+				<p>MK技術研究所</p>
+				<ul class="footer-navi">
+					<li>
+						<a href="#">運営会社</a>
+					</li>
+					<li>
+						<a href="#">/ 代表挨拶</a>
+					</li>
+					<li>
+						<a href="#">/ 広告掲載について</a>
+					</li>
+					<li>
+						<a href="#">/ 法人・団体の皆様へ</a>
+					</li>
+					<li>
+						<a href="#">/ English Information</a>
+					</li>
+				</ul>
+				<p class=footer-copyright>©2019 ********* Inc.<br>サイト内の文章、画像等の著作物は株式会社*********に属します。<br>文章・写真などの複製及び無断転載を禁じます。</p>
+			</div>
+		</div>
+	</div>
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
